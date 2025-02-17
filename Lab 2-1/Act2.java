@@ -2,6 +2,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//Дано довжини ребер A, B, C прямокутного паралелепіпеда. Знайти його об’єм та площу поверхні.
+
 public class Act2 {   
     public static void main(String[] args) throws IOException
 {
