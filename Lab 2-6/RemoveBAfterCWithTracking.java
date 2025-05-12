@@ -1,6 +1,11 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+/*
+Дано текст. Надрукувати його, видаливши з нього всі літери b,
+безпосередньо перед якими стоїть літера с. 
+*/
+
 public class RemoveBAfterCWithTracking {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
