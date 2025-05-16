@@ -11,7 +11,7 @@ public class LongestWordFinder {
         String text = scanner.nextLine();
         scanner.close();
 
-        //Створення зміних для подальшого пошуку найдовшого слова, його довжини та моніпулювання з почотчним словом
+        //Створення зміних для подальшого пошуку найдовшого слова, його довжини та маніпулювання з поточним словом
         String longestWord = "";
         int maxLength = 0;
         String currentWord = "";
