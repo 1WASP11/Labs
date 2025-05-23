@@ -1,9 +1,5 @@
-/**
- * routes/bookRoutes.js
- *
- * Обробляє всі маршрути, пов'язані з ресурсом "книги" (/api/books)
- */
-
+// Обробляє всі маршрути, пов'язані з ресурсом "книги" (/api/books)
+ 
 const express = require('express');
 const { readData, writeData } = require('../data/db'); // Імпорт функцій для роботи з файлом даних
 const { isAdmin } = require('../middleware/auth'); // Імпорт мідлвера для перевірки прав адміністратора

@@ -11,7 +11,7 @@ const app = express();
 // 3. Визначення порту
 const PORT = process.env.PORT || 3000;
 
-// --- Налаштування Swagger ---
+// Налаштування Swagger
 const swaggerDefinition = {
   openapi: '3.0.0', // Версія специфікації OpenAPI
   info: {
@@ -34,8 +34,6 @@ const swaggerDefinition = {
       }
     }
   },
-  // Примітка: Глобальна безпека тут не застосовується,
-  // вона вказується для конкретних маршрутів у JSDoc анотаціях.
 };
 
 const options = {
@@ -46,14 +44,14 @@ const options = {
 
 // Генеруємо специфікацію Swagger/OpenAPI на основі JSDoc
 const swaggerSpec = swaggerJsdoc(options);
-// --- Кінець налаштування Swagger ---
+// Кінець налаштування Swagger
 
 
 // 4. Глобальні мідлвери
 app.use(express.json()); // Для парсингу JSON тіла запитів
 app.use(authenticateUser); // Для визначення користувача за токеном (для всіх маршрутів нижче)
 
-// --- Маршрути Swagger ---
+// Маршрути Swagger
 // Обслуговуємо Swagger UI за шляхом /api-docs
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 // Надаємо доступ до згенерованої специфікації у форматі JSON (необов'язково)
